@@ -1,0 +1,54 @@
+input {
+  border-radius: 4px;
+  outline: 0;
+  transition: all .3s linear;
+  border: 1px solid #d9d9d9;
+  width: 90px;
+  height: 30px;
+  padding: 0 11px;
+}
+
+input:hover {
+  border-color: #40a9ff;
+}
+input:focus {
+  box-shadow: 0 0 0 2px rgba(24,144,255,0.2);
+}
+
+
+.input-number {
+  color: #333;
+}
+
+.input-number .icon-wrapper {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 6px;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  color: #ccc;
+  vertical-align: bottom;
+}
+.input-number .icon-wrapper:hover {
+  color: #40a9ff;
+  border: 1px solid #40a9ff;
+}
+
+.input-number .icon-wrapper:active {
+  box-shadow: 0 0 0 2px rgba(24,144,255,0.2);
+}
+
+.input-number .icon-wrapper:active {
+  box-shadow: 0 0 0 2px rgba(24,144,255,0.2);
+}
+.input-number .icon-wrapper .css-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+  vertical-align: center;
+}

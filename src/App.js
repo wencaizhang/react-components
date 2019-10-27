@@ -1,24 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+// import Input from "./Input";
+import InputNumber from "./InputNumber";
+
 function App() {
+  // const [inputValue, setInputValue] = useState('111')
+  const [value, setValue] = useState(111)
+  console.log(value);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <div className="demo">
+        input: <Input placeholder="请输入关键字" value={inputValue} onChange={e=>setInputValue(e.target.value)} />
+        <hr />
+      </div> */}
+      <div className="demo">
+        <InputNumber
+          value={value}
+          onChange={ v => {
+            v = Number.parseInt(v)
+            v = isNaN(v) ? '' : v
+            setValue(v)
+          } }
+        />
+        <hr />
+        <InputNumber
+          defaultValue={value}
+          onChange={ v => {
+            v = Number.parseInt(v)
+            v = isNaN(v) ? '' : v
+            setValue(v)
+          } }
+        />
+      </div>
+
     </div>
   );
 }

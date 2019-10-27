@@ -1,0 +1,34 @@
+.css-icon {
+  display: inline-block;
+  height: 1em; width: 1em;
+  font-size: 20px;
+  box-sizing: border-box;
+  text-indent: -9999px;
+  vertical-align: middle;
+  position: relative;
+}
+.css-icon::before,
+.css-icon::after {
+  content: '';
+  box-sizing: inherit;
+  position: absolute;
+  left: 50%; top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+.icon-plus::before {
+  width: 90%;
+  border-top: 1px solid;
+}
+.icon-plus::after {
+  height: 90%;
+  border-left: 1px solid;
+}
+
+.icon-minus::before {
+  width: 90%;
+  border-top: 1px solid;
+}
