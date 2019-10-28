@@ -3,6 +3,7 @@ import './App.css';
 
 // import Input from "./Input";
 import InputNumber from "./InputNumber";
+import Confirm from "./Confirm/demo";
 
 function App() {
   // const [inputValue, setInputValue] = useState('111')
@@ -16,6 +17,7 @@ function App() {
         <hr />
       </div> */}
       <div className="demo">
+        value: 
         <InputNumber
           value={value}
           onChange={ v => {
@@ -25,6 +27,7 @@ function App() {
           } }
         />
         <hr />
+        defaultValue: 
         <InputNumber
           defaultValue={value}
           onChange={ v => {
@@ -33,6 +36,10 @@ function App() {
             setValue(v)
           } }
         />
+      </div>
+
+      <div className="demo">
+        <Confirm />
       </div>
 
     </div>
